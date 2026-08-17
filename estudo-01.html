@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INVESTIGANDO A FÉ — Estudo 01: O que é a Bíblia?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F5F0;
+    --ink:#202124;
+    --wine:#7A1F2B;
+    --gold:#C9A66B;
+    --green:#315B52;
+    --terracotta:#A65A3A;
+    --paper: #FFFFFF;
+    --line: rgba(32,33,36,0.12);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Montserrat',sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .doc{ max-width:640px; margin:0 auto; }
+  section{ padding:56px 24px; border-bottom:1px solid var(--line); }
+  section.no-border{ border-bottom:none; }
+
+  h1,h2,h3{ font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:0.02em; margin:0 0 12px; }
+  .eyebrow{
+    font-family:'Montserrat',sans-serif; font-weight:600; letter-spacing:0.18em;
+    text-transform:uppercase; font-size:12px; color:var(--wine); margin-bottom:10px;
+  }
+  .quote{ font-family:'Cormorant Garamond',serif; font-style:italic; font-size:20px; color:var(--ink); }
+  .verse{ font-family:'Cormorant Garamond',serif; font-size:19px; color:var(--wine); }
+
+  /* CAPA */
+  .cover{
+    background:var(--ink); color:var(--bg);
+    min-height:92vh; display:flex; flex-direction:column; justify-content:center;
+    padding:60px 32px; text-align:center; border-bottom:none;
+  }
+  .cover .series{ font-family:'Oswald'; letter-spacing:0.3em; font-size:14px; color:var(--gold); margin-bottom:26px; }
+  .cover .estudo-tag{ font-family:'Montserrat'; letter-spacing:0.2em; font-size:12px; color:var(--bg); opacity:0.7; margin-bottom:8px; }
+  .cover h1{ font-size:44px; line-height:1.05; margin:6px 0 30px; }
+  .cover .quote{ color:var(--gold); font-size:22px; max-width:420px; margin:0 auto 30px; }
+  .cover .tags{ font-family:'Montserrat'; font-size:11px; letter-spacing:0.15em; color:var(--bg); opacity:0.6; }
+
+  /* generic blocks */
+  .box{ border:1px solid var(--line); border-radius:2px; padding:20px 22px; margin:20px 0; background:var(--paper); }
+  .box.wine{ border-color:var(--wine); border-left-width:4px; }
+  .box.green{ border-color:var(--green); border-left-width:4px; }
+  .box.terracotta{ border-color:var(--terracotta); border-left-width:4px; }
+  .box.gold{ border-color:var(--gold); border-left-width:4px; }
+  .label{ font-weight:700; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:8px; display:block; }
+  .label.wine{ color:var(--wine); }
+  .label.green{ color:var(--green); }
+  .label.terracotta{ color:var(--terracotta); }
+  .label.gold{ color:#8a6d3b; }
+
+  .qbig{ font-family:'Oswald'; font-size:30px; line-height:1.15; margin:16px 0; }
+  ul.simple{ padding-left:20px; margin:14px 0; }
+  ul.simple li{ margin-bottom:8px; }
+  .flow{ font-family:'Oswald'; text-align:center; font-size:15px; letter-spacing:0.05em; line-height:2.4; color:var(--green); }
+  .lines{ margin-top:18px; }
+  .lines div{ border-bottom:1px solid var(--line); height:34px; }
+  .step-tag{ display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--wine); border:1px solid var(--wine); border-radius:20px; padding:4px 12px; margin-bottom:14px; }
+  .status{ display:flex; gap:10px; margin-bottom:10px; align-items:flex-start; }
+  .dot{ flex:0 0 14px; height:14px; width:14px; border-radius:50%; margin-top:4px; }
+  .dot.green{ background:#3f7a5f; }
+  .dot.yellow{ background:var(--gold); }
+  small.footnote{ color:#6b6d70; font-size:13px; }
+  .section-num{ font-family:'Oswald'; color:var(--gold); font-size:13px; letter-spacing:0.2em; }
+  hr.soft{ border:none; border-top:1px solid var(--line); margin:24px 0; }
+  .next{
+    background:var(--wine); color:var(--bg); padding:40px 24px; text-align:center;
+  }
+  .next h2{ color:var(--gold); font-size:14px; letter-spacing:0.2em; margin-bottom:16px; }
+  .next .qbig{ color:var(--bg); font-size:26px; }
+  footer.transp{ background:var(--ink); color:var(--bg); padding:40px 24px; text-align:center; font-size:13px; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="doc">
+
+  <!-- CAPA -->
+  <section class="cover">
+    <div class="series">INVESTIGANDO A FÉ</div>
+    <div class="estudo-tag">ESTUDO 01</div>
+    <h1>O que é<br>a Bíblia?</h1>
+    <div class="quote">"Antes de perguntar o que a Bíblia ensina, precisamos entender o que estamos segurando."</div>
+    <div class="tags">ESTUDO · LEITURA · CONVERSA · REFLEXÃO</div>
+  </section>
+
+  <!-- COMO USAR -->
+  <section>
+    <span class="eyebrow">Antes de começar</span>
+    <h2>Como usar este estudo</h2>
+    <p>Este não é um curso.</p>
+    <p>Você não precisa terminar sabendo tudo.</p>
+    <p>A proposta é simples:</p>
+    <div class="flow">LER<br>↓<br>PENSAR<br>↓<br>QUESTIONAR<br>↓<br>CONVERSAR<br>↓<br>INVESTIGAR<br>↓<br>CONCLUIR</div>
+    <div class="box gold">
+      <span class="label gold">Um convite</span>
+      Sempre que este estudo indicar uma leitura, pare e leia o texto bíblico diretamente antes de continuar. As respostas vêm depois — não antes.
+    </div>
+  </section>
+
+  <!-- PERGUNTA DA SEMANA -->
+  <section>
+    <span class="eyebrow">A pergunta da semana</span>
+    <div class="qbig">Afinal...<br>o que é a Bíblia?</div>
+    <ul class="simple">
+      <li>É um livro?</li>
+      <li>É uma coleção de livros?</li>
+      <li>Quem escreveu?</li>
+      <li>Deus escreveu?</li>
+      <li>Como esses escritos chegaram até nós?</li>
+      <li>Sempre existiram os mesmos livros?</li>
+      <li>Por que cristãos diferentes possuem Bíblias diferentes?</li>
+      <li>E por que confiamos nela?</li>
+    </ul>
+    <p class="quote">Hoje não vamos responder tudo.<br>Vamos começar a investigar.</p>
+  </section>
+
+  <!-- PARTE 1 -->
+  <section>
+    <span class="section-num">PARTE 1</span>
+    <h2>O que você já acredita?</h2>
+    <p>Antes de pesquisar, faça uma pausa.</p>
+    <p>Responda, cada um por si:</p>
+    <p class="quote">"O que eu acredito que a Bíblia seja?"</p>
+    <p class="quote">"Por que eu acredito nisso?"</p>
+    <div class="lines"><div></div><div></div><div></div><div></div></div>
+    <div class="box wine">
+      <span class="label wine">Importante</span>
+      Não corrija as respostas ainda. Primeiro registre. Depois investigue.
+    </div>
+  </section>
+
+  <!-- PARTE 2 -->
+  <section>
+    <span class="section-num">PARTE 2</span>
+    <h2>A Bíblia é um livro?</h2>
+    <p>"Bíblia" não significa, originalmente, um único livro escrito de uma vez.</p>
+    <p>É melhor pensar nela como <strong>uma biblioteca de escritos</strong>.</p>
+    <ul class="simple">
+      <li>Lei</li>
+      <li>História</li>
+      <li>Poesia</li>
+      <li>Profetas</li>
+      <li>Evangelhos</li>
+      <li>Atos</li>
+      <li>Cartas</li>
+      <li>Apocalíptica</li>
+    </ul>
+    <p>Cada grupo tem seu próprio gênero literário — e isso muda como devemos lê-lo.</p>
+    <div class="box green">
+      <span class="label green">Pergunta em aberto</span>
+      Se são vários livros, como eles passaram a ser reconhecidos juntos como Escrituras?
+      <br><br>🔎 <em>Essa pergunta voltará mais adiante.</em>
+    </div>
+  </section>
+
+  <!-- PARTE 3 -->
+  <section>
+    <span class="section-num">PARTE 3</span>
+    <h2>Jesus e as Escrituras</h2>
+    <p>Esta é nossa primeira grande investigação bíblica.</p>
+    <div class="box">
+      <span class="label wine">📖 Leia primeiro</span>
+      <span class="verse"><a href="https://www.biblegateway.com/passage/?search=Lucas+4:16-21" target="_blank" rel="noopener" style="color:var(--wine);">Lucas 4:16-21</a> · <a href="https://www.biblegateway.com/passage/?search=Lucas+24:25-27" target="_blank" rel="noopener" style="color:var(--wine);">Lucas 24:25-27</a> · <a href="https://www.biblegateway.com/passage/?search=Lucas+24:44-47" target="_blank" rel="noopener" style="color:var(--wine);">Lucas 24:44-47</a> · <a href="https://www.biblegateway.com/passage/?search=Mateus+4:1-11" target="_blank" rel="noopener" style="color:var(--wine);">Mateus 4:1-11</a> · <a href="https://www.biblegateway.com/passage/?search=João+10:34-35" target="_blank" rel="noopener" style="color:var(--wine);">João 10:34-35</a></span>
+    </div>
+    <p class="quote">Leiam primeiro. Só depois continuem.</p>
+    <hr class="soft">
+    <p>Depois de ler, pergunte-se:</p>
+    <ul class="simple">
+      <li>Como Jesus utilizava as Escrituras?</li>
+      <li>Jesus as tratava como autoridade?</li>
+      <li>Que escritos aparecem nesses textos?</li>
+      <li>Jesus simplesmente repetia os textos ou os interpretava?</li>
+      <li>O que podemos afirmar com segurança?</li>
+      <li>O que ainda não podemos concluir?</li>
+    </ul>
+    <div class="box green">
+      <span class="label green">O que os textos mostram</span>
+      Jesus demonstra profundo respeito pela autoridade das Escrituras que conhecia.
+    </div>
+    <div class="box terracotta">
+      <span class="label terracotta">⚠️ Não confunda</span>
+      "Jesus reconhecia as Escrituras" <strong>não é o mesmo</strong> que "Jesus apresentou uma lista completa dos livros da Bíblia moderna."<br><br>
+      Isso ainda não responde quais livros compõem nossa Bíblia atual — e o texto não afirma isso.
+    </div>
+  </section>
+
+  <!-- PARTE 4 -->
+  <section>
+    <span class="section-num">PARTE 4</span>
+    <h2>Escritura e tradição</h2>
+    <div class="box">
+      <span class="label wine">📖 Leia</span>
+      <span class="verse"><a href="https://www.biblegateway.com/passage/?search=Marcos+7:1-13" target="_blank" rel="noopener" style="color:var(--wine);">Marcos 7:1-13</a> · <a href="https://www.biblegateway.com/passage/?search=Mateus+15:1-9" target="_blank" rel="noopener" style="color:var(--wine);">Mateus 15:1-9</a></span>
+    </div>
+    <p>Primeiro pergunte: <em>o que está acontecendo?</em></p>
+    <p>Depois: <em>qual é o problema de Jesus com a tradição?</em></p>
+    <p>Investigue:</p>
+    <ul class="simple">
+      <li>Jesus rejeita toda tradição?</li>
+      <li>Ou existem tradições humanas que podem entrar em conflito com os mandamentos de Deus?</li>
+    </ul>
+    <div class="box green">
+      <span class="label green">Conclusão provisória</span>
+      Jesus não trata toda tradição simplesmente como algo mau. A crítica está no momento em que uma tradição humana passa a anular aquilo que Deus ordenou.
+    </div>
+    <p><small class="footnote">Não usamos este texto para resolver antecipadamente o debate Bíblia × Tradição × Igreja. Apenas apresentamos a questão.</small></p>
+  </section>
+
+  <!-- PARTE 5 -->
+  <section>
+    <span class="section-num">PARTE 5</span>
+    <h2>E os apóstolos?</h2>
+    <div class="box">
+      <span class="label wine">📖 Leia</span>
+      <span class="verse"><a href="https://www.biblegateway.com/passage/?search=Atos+17:10-12" target="_blank" rel="noopener" style="color:var(--wine);">Atos 17:10-12</a> · <a href="https://www.biblegateway.com/passage/?search=2+Timóteo+3:14-17" target="_blank" rel="noopener" style="color:var(--wine);">2 Timóteo 3:14-17</a> · <a href="https://www.biblegateway.com/passage/?search=2+Pedro+1:20-21" target="_blank" rel="noopener" style="color:var(--wine);">2 Pedro 1:20-21</a> · <a href="https://www.biblegateway.com/passage/?search=2+Pedro+3:15-16" target="_blank" rel="noopener" style="color:var(--wine);">2 Pedro 3:15-16</a></span>
+    </div>
+    <p>O que os primeiros cristãos faziam quando ouviam um ensinamento?</p>
+    <p>Repare no exemplo dos bereanos, em Atos 17: eles examinavam as Escrituras todos os dias para conferir o que ouviam.</p>
+    <div class="box green">
+      <span class="label green">Investigar</span>
+      O que significa "Escritura" em 2 Timóteo 3:14-17? A que escritos o texto está se referindo naquele contexto histórico?
+    </div>
+    <p><small class="footnote">Não afirmamos automaticamente que "Escritura", nessa passagem, significa exatamente os 66 livros da Bíblia moderna. O texto precisa ser lido em seu próprio contexto.</small></p>
+  </section>
+
+  <!-- PARTE 6 -->
+  <section>
+    <span class="section-num">PARTE 6</span>
+    <h2>Uma questão que complica a história</h2>
+    <div class="box">
+      <span class="label wine">📖 Leia</span>
+      <span class="verse"><a href="https://www.biblegateway.com/passage/?search=2+Tessalonicenses+2:15" target="_blank" rel="noopener" style="color:var(--wine);">2 Tessalonicenses 2:15</a> · <a href="https://www.biblegateway.com/passage/?search=1+Coríntios+11:2" target="_blank" rel="noopener" style="color:var(--wine);">1 Coríntios 11:2</a> · <a href="https://www.biblegateway.com/passage/?search=1+Coríntios+15:1-8" target="_blank" rel="noopener" style="color:var(--wine);">1 Coríntios 15:1-8</a> · <a href="https://www.biblegateway.com/passage/?search=2+Timóteo+2:2" target="_blank" rel="noopener" style="color:var(--wine);">2 Timóteo 2:2</a></span>
+    </div>
+    <p>O Novo Testamento fala de ensinamentos transmitidos de duas formas:</p>
+    <ul class="simple">
+      <li>oralmente;</li>
+      <li>por escrito.</li>
+    </ul>
+    <p class="quote">Então a igreja primitiva possuía apenas escritos, ou também ensinamentos apostólicos transmitidos oralmente?</p>
+    <div class="box terracotta">
+      <span class="label terracotta">🔎 Investigação futura</span>
+      Precisamos estudar com calma a relação entre Escritura, tradição apostólica e Igreja. Essa questão será retomada em um estudo específico.
+    </div>
+  </section>
+
+  <!-- PARTE 7 -->
+  <section>
+    <span class="section-num">PARTE 7</span>
+    <h2>Como a Bíblia chegou até nós?</h2>
+    <p>Por enquanto, apenas uma introdução — os manuscritos merecem um estudo próprio mais à frente.</p>
+    <div class="flow" style="font-size:13px;">TRADIÇÃO ORAL<br>↓<br>TEXTOS ESCRITOS<br>↓<br>CÓPIAS<br>↓<br>COLEÇÕES<br>↓<br>MANUSCRITOS<br>↓<br>TRADUÇÕES<br>↓<br>BÍBLIAS QUE TEMOS HOJE</div>
+    <p>A Bíblia que temos em mãos não apareceu pronta como um único volume.</p>
+    <p>Isso não significa que "a Bíblia foi inventada".</p>
+    <p>Também não significa que "nada mudou durante a transmissão".</p>
+    <p>A verdade histórica é mais interessante do que as duas versões simplificadas — e merece investigação própria.</p>
+  </section>
+
+  <!-- PARTE 8 -->
+  <section>
+    <span class="section-num">PARTE 8</span>
+    <h2>Uma primeira conclusão</h2>
+    <p>Até aqui, podemos afirmar com razoável segurança:</p>
+    <div class="status"><div class="dot green"></div><div>A Bíblia é uma coleção de diferentes escritos.</div></div>
+    <div class="status"><div class="dot green"></div><div>Jesus tratava as Escrituras como autoridade.</div></div>
+    <div class="status"><div class="dot green"></div><div>Os primeiros cristãos usavam as Escrituras para avaliar ensinamentos.</div></div>
+    <div class="status"><div class="dot green"></div><div>O ensino apostólico também era transmitido oralmente.</div></div>
+    <div class="status"><div class="dot green"></div><div>A formação e transmissão dos textos ocorreu dentro da história.</div></div>
+    <hr class="soft">
+    <p>E ainda precisamos investigar:</p>
+    <div class="status"><div class="dot yellow"></div><div>Como os diferentes livros foram reconhecidos como Escritura.</div></div>
+    <div class="status"><div class="dot yellow"></div><div>Como os textos foram preservados e transmitidos.</div></div>
+    <div class="status"><div class="dot yellow"></div><div>A relação entre Escritura, tradição e Igreja.</div></div>
+  </section>
+
+  <!-- PARTE 9 -->
+  <section>
+    <span class="section-num">PARTE 9</span>
+    <div class="qbig">Boas perguntas<br>são parte da fé.</div>
+    <ul class="simple">
+      <li>Quem decidiu quais livros entrariam na Bíblia?</li>
+      <li>Quando o cânon foi formado?</li>
+      <li>Por que existem diferentes cânones cristãos?</li>
+      <li>Podemos confiar nos manuscritos?</li>
+      <li>Existem erros de transmissão?</li>
+      <li>A Bíblia é inspirada?</li>
+      <li>O que significa "Palavra de Deus"?</li>
+      <li>A Bíblia é a única autoridade?</li>
+      <li>Qual é o papel da Igreja?</li>
+      <li>Qual é o papel da tradição?</li>
+    </ul>
+  </section>
+
+  <!-- PARTE 10 -->
+  <section>
+    <span class="section-num">PARTE 10</span>
+    <h2>Nossa conclusão da semana</h2>
+    <p>Escrevam, juntos, a conclusão provisória de vocês:</p>
+    <div class="lines"><div></div><div></div><div></div><div></div><div></div></div>
+    <div class="box gold">
+      <span class="step-tag">Conclusão provisória</span>
+      <p>A Bíblia não surgiu como um único livro pronto. É uma coleção de escritos preservados por comunidades de fé ao longo da história. Jesus e seus primeiros seguidores trataram as Escrituras como autoridade fundamental, enquanto também existia transmissão oral de ensinamentos apostólicos. Por isso, compreender a Bíblia exige olhar tanto para seus textos quanto para a história através da qual esses textos chegaram até nós.</p>
+    </div>
+  </section>
+
+  <!-- PARTE 11 -->
+  <section class="no-border">
+    <span class="section-num">PARTE 11</span>
+    <h2>E o que isso muda em nós?</h2>
+    <p class="quote">Depois deste estudo, nossa maneira de ler a Bíblia precisa mudar?</p>
+    <ul class="simple">
+      <li>Estamos lendo versículos isolados?</li>
+      <li>Estamos levando o contexto a sério?</li>
+      <li>Estamos permitindo que o texto confronte nossas próprias ideias?</li>
+      <li>Estamos usando a Bíblia para ouvir Jesus, ou apenas para confirmar aquilo que já pensamos?</li>
+    </ul>
+    <div class="lines"><div></div><div></div><div></div></div>
+  </section>
+
+  <!-- ENCERRAMENTO -->
+  <section class="next no-border">
+    <p style="font-family:'Cormorant Garamond'; font-style:italic; font-size:19px; color:var(--bg); margin-bottom:22px;">
+      Uma pergunta nos trouxe até aqui.<br>Agora temos várias outras.
+    </p>
+    <h2>Se a Bíblia é tão fundamental para a fé cristã...</h2>
+    <div class="qbig">Por que acreditamos que ela é a Palavra de Deus?</div>
+    <p style="margin-top:26px; color:var(--gold); font-size:13px; letter-spacing:0.1em;">PRÓXIMO ESTUDO</p>
+    <p style="font-family:'Oswald'; font-size:18px;">ESTUDO 02 — "A Bíblia é realmente a Palavra de Deus?"</p>
+  </section>
+
+  <!-- FONTES -->
+  <section>
+    <span class="eyebrow">Para quem quiser ir mais fundo</span>
+    <h3>Fontes</h3>
+    <p><strong>📖 Textos bíblicos</strong> — cada passagem citada neste estudo está com link direto para leitura (clique nas referências ao longo do texto). Você pode trocar a versão/tradução na própria página.</p>
+    <p><strong>📚 Para explorar o tema do cânon e da transmissão dos textos</strong> — <a href="https://www.bibleodyssey.org" target="_blank" rel="noopener" style="color:var(--wine);">Bible Odyssey</a>, projeto público da Society of Biblical Literature (SBL), com artigos de especialistas sobre formação, manuscritos e história da Bíblia.</p>
+    <p><strong>🔎 Fontes acadêmicas específicas</strong> — a cada novo estudo desta série, as referências específicas usadas (autores, obras, artigos) virão aqui com link direto e verificado, priorizando fontes primárias e pesquisa acadêmica confiável.</p>
+  </section>
+
+  <!-- NOTA DE TRANSPARÊNCIA -->
+  <footer class="transp">
+    Este estudo não pretende representar uma denominação específica. Quando existem diferentes interpretações cristãs, procuramos apresentá-las de maneira justa. Quando uma questão permanece em debate, preferimos reconhecer a incerteza a fabricar uma resposta.
+    <br><br>
+    <span style="color:var(--gold); letter-spacing:0.15em; font-size:11px;">INVESTIGANDO A FÉ · ESTUDO 01</span>
+  </footer>
+
+</div>
+</body>
+</html>
