@@ -1,0 +1,9 @@
+<svg width="120" height="120" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Círculo externo -->
+  <circle cx="50" cy="50" r="40" stroke="#7A1F2B" stroke-width="7" stroke-dasharray="210 50" stroke-linecap="round" transform="rotate(-45 50 50)"/>
+  <!-- Caminho afunilando até a base da cruz -->
+  <path d="M22 80 C 38 80, 34 62, 50 53" stroke="#7A1F2B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M24.5 83 C 39 83, 37.5 67, 50 56.5" stroke="#F7F5F0" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <!-- Cruz centralizada, descida e aumentada -->
+  <path d="M50 20 V 56 M 36 30 H 64" stroke="#7A1F2B" stroke-width="6.5" stroke-linecap="round"/>
+</svg>
